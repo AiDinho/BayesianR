@@ -14,3 +14,6 @@ lines(c(1,N),c(0.5,0.5),
 
 flipLetters <- paste(c('H','T')[flipseq[1:10]+1],collapse="")
 displayString <- paste("flipSeq=",flipLetters,"...",sep = " " )
+text(5,0.9,displayString,adj = c(0,1),cex = 1.3)
+text(N,.3,paste("end Proportion=",runProp[N]),adj = c(1,0),cex = 1.3)
+dev.copy2eps(file="RunningPropotion.eps")
